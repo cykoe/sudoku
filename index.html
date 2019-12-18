@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body onload='onLoad()'>
+    <table id='sudoku' align='center'>
+    </table>
+    <div class='button-section'>
+        <input type='radio' name='diff' id='easy' value=15 checked>Easy<br>
+        <input type='radio' name='diff' id='medium' value=35>Medium<br>
+        <input type='radio' name='diff' id='hard' value=55>Hard<br>
+        <button id='button'>solve sudoku</button>
+        <button id='reset'>reset</button>
+    </div>
+
+</body>
+<script src='lodash.js'></script>
+<script src='sudoku.js'></script>
+<script src='index.js'></script>
+
+</html>
